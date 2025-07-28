@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>无人平台测试评估系统</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f5f7fa;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="sideBar">
+      <property name="styleSheet">
+       <string notr="true">background-color: #2c3e50;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="labelLogo">
+         <property name="styleSheet">
+          <string notr="true">color: white; font-size: 20px; font-weight: bold; padding: 20px;</string>
+         </property>
+         <property name="text">
+          <string>无人平台测试评估系统</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnUnits">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}
+QPushButton[active="true"] {
+    background-color: #34495e;
+    border-left: 4px solid #3498db;
+}</string>
+         </property>
+         <property name="text">
+          <string>参试单位管理</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/units.png</normaloff>:/icons/units.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnStations">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}
+QPushButton[active="true"] {
+    background-color: #34495e;
+    border-left: 4px solid #3498db;
+}</string>
+         </property>
+         <property name="text">
+          <string>无人平台控制站管理</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/stations.png</normaloff>:/icons/stations.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnProtocols">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}
+QPushButton[active="true"] {
+    background-color: #34495e;
+    border-left: 4px solid #3498db;
+}</string>
+         </property>
+         <property name="text">
+          <string>协议管理</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/protocols.png</normaloff>:/icons/protocols.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnCommands">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}
+QPushButton[active="true"] {
+    background-color: #34495e;
+    border-left: 4px solid #3498db;
+}</string>
+         </property>
+         <property name="text">
+          <string>指令管理</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/commands.png</normaloff>:/icons/commands.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnTests">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}
+QPushButton[active="true"] {
+    background-color: #34495e;
+    border-left: 4px solid #3498db;
+}</string>
+         </property>
+         <property name="text">
+          <string>测试管理</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/tests.png</normaloff>:/icons/tests.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAnalysis">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}
+QPushButton[active="true"] {
+    background-color: #34495e;
+    border-left: 4px solid #3498db;
+}</string>
+         </property>
+         <property name="text">
+          <string>测评结果分析</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/analysis.png</normaloff>:/icons/analysis.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSystem">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}
+QPushButton[active="true"] {
+    background-color: #34495e;
+    border-left: 4px solid #3498db;
+}</string>
+         </property>
+         <property name="text">
+          <string>系统管理</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/system.png</normaloff>:/icons/system.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnLogout">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    border: none;
+    font-size: 14px;
+    border-left: 4px solid transparent;
+}
+QPushButton:hover {
+    background-color: #34495e;
+}</string>
+         </property>
+         <property name="text">
+          <string>退出系统</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/icons/logout.png</normaloff>:/icons/logout.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: #f5f7fa;</string>
+      </property>
+      <widget class="QWidget" name="pageHome">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="labelWelcome">
+          <property name="styleSheet">
+           <string notr="true">font-size: 24px; color: #2c3e50; padding: 20px;</string>
+          </property>
+          <property name="text">
+           <string>欢迎使用无人平台测试评估系统</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelDescription">
+          <property name="styleSheet">
+           <string notr="true">font-size: 16px; color: #7f8c8d; padding: 10px 40px;</string>
+          </property>
+          <property name="text">
+           <string>请从左侧菜单选择功能模块开始工作</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageUnits"/>
+      <widget class="QWidget" name="pageStations"/>
+      <widget class="QWidget" name="pageProtocols"/>
+      <widget class="QWidget" name="pageCommands"/>
+      <widget class="QWidget" name="pageTests"/>
+      <widget class="QWidget" name="pageAnalysis"/>
+      <widget class="QWidget" name="pageSystem"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
